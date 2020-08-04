@@ -1,7 +1,15 @@
+
+
+
 body{
-    background-image: url('../bcgimg/books.jpeg');
+    background-image: url('../bcgimg/mybgc.png');
     background-size: 102%;
+    background-blend-mode:darken;
     background-color: rgb(255, 251, 242);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    /* background-position-x: 15em; */
     width: 98vw;
     height: 96vh;
     margin: 0;
@@ -9,9 +17,9 @@ body{
 
 h1{
 text-align: center;
-color: rgb(167, 73, 73);
+color: rgb(214, 126, 99);
 font-style: oblique;
-font-size: 40px;
+font-size: 50px;
 }
 
 h2{
@@ -33,12 +41,15 @@ h4{
 
 
 .create-book-btn{
+    position: absolute;
+    top: 100px;
+    right:15%;
     color: rgb(243, 167, 3);
     font-weight: bold;
     cursor: pointer;
     border-style: none;
-    background-color:rgb(255, 251, 242);
-}
+    background-blend-mode: soft-light;
+    background: repeating-radial-gradient(#e4e3e2, transparent 100px);}
 
 .create-book-btn:hover{
     color: rgb(197, 8, 8);
@@ -116,6 +127,10 @@ thead tr th:nth-child(3){
     cursor: pointer;
 }
 
+thead tr th:nth-child(2):hover, thead tr th:nth-child(3):hover{
+    color: rgb(247, 197, 197);
+}
+
 td{
     height: 70px;
     width: auto;
@@ -142,21 +157,29 @@ text-align: center;
 }
 
 .next-page{
+    max-width: 150px;
+    line-height: 40px;
+    font-size: 15px;
     font-weight: bold;
-    color: rgb(214, 117, 78);
-    background-color: rgb(252, 204, 133);
+    color: rgb(255, 255, 255);
+    background-color: rgb(214, 136, 112);
     border-width: 0;
-    border-radius: 10%;
+    border-radius: 10px;
+    outline: none;
     cursor: pointer;
     position: relative;
     right: 10px;
     top: 10px;
 }
 
+.next-page:hover{
+    color: maroon;
+    }
+
 
 .card-body button{
     color: rgb(255, 255, 255);
-    background: linear-gradient(0deg,  rgb(196, 113, 46),rgb(255, 189, 68));   
+    background: linear-gradient(0deg,  rgb(177, 102, 79),rgb(253, 142, 108));   
     border-style: none ;
     border-radius: 3PX;
     padding: 10px;

@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 $(window).ready(init)
 
@@ -47,13 +47,11 @@ function renderModal(id) {
 }
 
 function onSharePage() {
-    $('ul a').attr('href', 'https://www.facebook.com/sharer.php?u=' + 'https://idanrozen103.github.io/minesweeper/');
-    //chande line at the end
+    $('ul a').attr('href', 'https://www.facebook.com/sharer.php?u=' + 'https://idanrozen103.github.io/Gallery/');
 }
 
 
 function onsendEmail() {
-
     var mailAddress = $('#contactMail').val();
     var mailSubject = $('#contactSubject').val();
     var mailMsg = $('#contactMsg').val();
@@ -61,5 +59,4 @@ function onsendEmail() {
     url = `https://mail.google.com/mail/?view=cm&fs=1&to=idanrozen103@gmail.com&su=${mailSubject}&body=${mailMsg} ${mailAddress}`;
     openCanvas();
     window.open(url, '_blank');
-
 }

@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 var gProjs = [
     {
@@ -27,7 +27,7 @@ var gProjs = [
         name: "Guess Who?",
         title: "akinator",
         desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt rem, accusamus architecto porro voluptatem aliquid officia repudiandae quae doloribus, quibusdam nulla illo facere similique consectetur quia suscipit? Cum, quaerat quibusdam.",
-        imgUrl:"./img/portfolio/akinator.jpg",
+        imgUrl:"./img/portfolio/akinator.JPG",
         url: "projs/GuessMe-Ex-startHere/",
         publishedAt: 1594933200000,
         labels: ["Bootstrap ", "DOM Tree"]
@@ -38,8 +38,8 @@ var gProjs = [
         name: "Book-Shop",
         title: "bookShop",
         desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt rem, accusamus architecto porro voluptatem aliquid officia repudiandae quae doloribus, quibusdam nulla illo facere similique consectetur quia suscipit? Cum, quaerat quibusdam.",
-        imgUrl:"./img/portfolio/bookShop.png",
-        url: href="projs/bookShop/",
+        imgUrl:"./img/portfolio/bookShop.JPG",
+        url: "projs/bookShop/",
         publishedAt: 1596056400000,
         labels: [ "MVC",]
     },
@@ -48,7 +48,7 @@ var gProjs = [
         name: "What's in The picture?",
         title: "inPictures",
         desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt rem, accusamus architecto porro voluptatem aliquid officia repudiandae quae doloribus, quibusdam nulla illo facere similique consectetur quia suscipit? Cum, quaerat quibusdam.",
-        imgUrl:"./img/portfolio/inPicture.jpg",
+        imgUrl:"./img/portfolio/inPicture.JPG",
         url: "projs/inPicture/",
         publishedAt: 1594933200000,
         labels: ["CSS"]
@@ -58,19 +58,16 @@ var gProjs = [
         name: "Pop-Up Baloons",
         title: "baloons",
         desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt rem, accusamus architecto porro voluptatem aliquid officia repudiandae quae doloribus, quibusdam nulla illo facere similique consectetur quia suscipit? Cum, quaerat quibusdam.",
-        imgUrl:"./img/portfolio/baloons.jpg",
-        url: href="projs/baloons/",
+        imgUrl:"./img/portfolio/baloons.JPG",
+        url: "projs/baloons/",
         publishedAt: 1594760400000,
         labels: [ "Render ", "Transition ", "Transform"]
     }]
-// function createProject() {
 
-// }
 
 function getProjects(){
 return gProjs
 }
 
 
-//new Date("Jul 24, 2020").getTime() to show timestamp
 
