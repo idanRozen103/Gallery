@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title> What's in the picture? </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="init()">
+    <h1> What's in the picture?</h1>
+    <div class="box">
+        <div class="pic">
+            <img onclick="zoom()" />
+        </div>
+        <div class="answer answer1" onclick="checkAnswer(1)">Budapest</div>
+        <div class="answer answer2" onclick="checkAnswer(2)">China</div>
+    </div>
+
+    <button class="reset-button" onclick="init()"> New Game </button>
+
+    <footer> Copyright &#169; 2020. Photographer: Idan Rozen</footer>
+
+
+
+
+
+    <script src="./js/main.js"> </script>
+</body>
+
+</html>

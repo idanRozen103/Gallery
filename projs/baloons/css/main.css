@@ -1,0 +1,16 @@
+body {
+    background-image: url(../img/sky.jpg);
+    background-size: cover;
+}
+
+.balloon {
+    bottom: 0em;
+    width: 130px;
+    height: 175px;
+    border-radius:  60px; ;
+    position: absolute;
+    border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}

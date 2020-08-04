@@ -1,0 +1,253 @@
+body{
+    background-image: url('../bcgimg/books.jpeg');
+    background-size: 102%;
+    background-color: rgb(255, 251, 242);
+    width: 98vw;
+    height: 96vh;
+    margin: 0;
+}
+
+h1{
+text-align: center;
+color: rgb(167, 73, 73);
+font-style: oblique;
+font-size: 40px;
+}
+
+h2{
+    color: violet;
+    text-align: center;
+}
+h4{
+    position: absolute;
+    font-size: large;
+    right: 5px;
+    bottom: 16px;
+    background-color: rgb(250, 207, 190);
+    padding: 5px;
+    color: crimson;
+    border:1px solid brown;
+    border-radius: 5px;
+    font-weight: lighter;
+}
+
+
+.create-book-btn{
+    color: rgb(243, 167, 3);
+    font-weight: bold;
+    cursor: pointer;
+    border-style: none;
+    background-color:rgb(255, 251, 242);
+}
+
+.create-book-btn:hover{
+    color: rgb(197, 8, 8);
+}
+
+.modal{
+    position: relative;
+    display: flex;
+    margin: 10px auto;
+    align-items: center;
+    background-color: rgb(252, 245, 222);
+    width: 500px;
+    padding: 30px;
+    font-size: 25px;
+    border: 1px medium;
+    border-radius: 7px;
+    justify-content: space-evenly;
+}
+
+.modal input{
+    border-style: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.modal button{
+    font-size: 15px;
+    background-color: rgb(250, 217, 191);
+    border: 1px solid rgb(255, 201, 139);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-book input{
+    margin: 20px, 0;
+}
+
+
+.create-book input:focus{
+    background-color: rgb(253, 246, 182);
+}
+
+.update-book{
+    width: 300px;
+}
+
+.container{
+    width: 70vw;
+    background-color: rgb(253, 251, 244);
+    border-radius: 12px;
+    margin: 30px auto; 
+    box-shadow: 1px 1px 50px 2px rgb(230, 218, 212);
+    border: 2px solid rgb(247, 241, 238);
+
+}
+
+.headlines {
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(143, 54, 13);
+    padding: 0 auto;
+    border-bottom: 2px solid rgb(230, 234, 238);
+}
+
+thead tr th:nth-child(2){
+    width: 300px;
+    cursor: pointer;
+}
+
+thead tr th:nth-child(3){
+    cursor: pointer;
+}
+
+td{
+    height: 70px;
+    width: auto;
+    padding: 10px 20px;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgb(126, 121, 126);
+}
+
+td p{
+    margin: 0;
+    color: rgb(131, 121, 121);
+    font-size: small;
+    font-weight: lighter;
+}
+
+tr{
+    height: 50px;
+    border-bottom: 2px solid rgb(247, 210, 228);
+}
+
+.container tr,:last-child {
+text-align: center;
+}
+
+.next-page{
+    font-weight: bold;
+    color: rgb(214, 117, 78);
+    background-color: rgb(252, 204, 133);
+    border-width: 0;
+    border-radius: 10%;
+    cursor: pointer;
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+
+
+.card-body button{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(0deg,  rgb(196, 113, 46),rgb(255, 189, 68));   
+    border-style: none ;
+    border-radius: 3PX;
+    padding: 10px;
+    box-shadow:  3px 5px 10px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.card-body button:hover{
+color: maroon;
+}
+
+
+.book-details{
+    visibility: hidden;
+    position: absolute;
+    bottom: 100px;
+    left: 350px;
+    width: 800px;
+    height: 600px;
+    background-color: rgb(238, 247, 253);
+    border-radius: 2%;
+    box-shadow: 2px 40px 50px 200px rgba(12, 7, 7, 0.2), -3PX 40px 30px 30px rgba(0, 0, 0, 0.14),2px 5px 15px -4px rgba(12, 7, 7, 0.2)
+}
+
+p{
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(175, 53, 31);
+}
+
+.book-details p {
+    padding: 10px ;
+}
+
+.book-details h5 {
+    text-align: start;
+    padding: 0 20px ;
+    font-size: medium;
+}
+
+.book-details button{
+    font-size: 15px;
+    background-color: rgb(250, 217, 191);
+    border: 1px solid rgb(255, 201, 139);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-details .close-modal{
+    font-size: x-large;
+    font-weight: lighter;
+    color: rgb(187, 147, 72);
+    background-color: rgb(245, 210, 182);
+    border-width: 0;
+    border-radius: 10%;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.book-details button:before:hover{
+    background-color: rgb(252, 177, 177); ;
+}
+
+.book-details .rate-book{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+
+.rate-book h5{
+    display: inline-block;
+}
+
+
+.book-details .image{
+    position: relative;
+    top:20px;
+    margin: 0px auto;
+    padding: 0;
+    width: 200px;
+    height: 250px;
+    border-radius: 2%;
+    box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 13px 19px 2px rgba(0, 0, 0, 0.14), 0px 5px 24px 4px rgba(0, 0, 0, 0.12);
+}
+
+.book-details img{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}

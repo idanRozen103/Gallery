@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body onload="init()" onkeydown="onEscapeKey(event)">
+    <H1>My BookShop</H1>
+
+    <button class="create-book-btn" onclick="onCreateBook()">Create new book</button>
+
+    <div class="create-book modal">
+        <button onclick="closeCreateBookModal()">x</button>
+        <input type="text" onkeyup="enableCreateBook()" placeholder="Enter the book's name" />
+        <input type="number" min="0" placeholder="Enter the book's price" />
+        <h4 hidden> The value must be higher than 1$</h4>
+        <button class="add-book" onclick="onAddBook()" disabled>Add</button>
+    </div>
+
+    <div class="update-book modal">
+        <button onclick="closaUpdateModal()">x</button>
+        <input type="number" min="0" onkeyup="enableUpdatePrice()" placeholder="Enter the book's price" />
+        <h4 hidden> The value must be higher than 1$</h4>
+        <button class="update-book-price" onclick="onUpdatePrice()" disabled>Update</button>
+    </div>
+
+    <h2 hidden>No books to display</h2>
+    <table class="container">
+        <thead class="headlines">
+            <tr>
+                <th>Id</th>
+                <th value="name" onclick="onFilterBy('name')">Title</th>
+                <th value="price" onclick="onFilterBy('price')">Price</th>
+                <th>Rating</th>
+                <th colspan="3">Action</th>
+            </tr>
+        </thead>
+        <tbody class="books-container"></tbody>
+    </table>
+
+    <button class="next-page" onclick="onNextPage()">Next Page ></button>
+
+    <div class="book-details">
+        <button class="close-modal" onclick="closeDetailsModal()">x</button>
+        <div class="image"></div>
+        <title></title>
+        <p></p>
+        <h5></h5>
+        <h5>price: $<span></span></h5>
+        <div class="rate-book">
+        <h5>Rate this book:</h5>
+        <button class="rating-down" onclick="onRatingChange(-1)"> ─ </button>
+        <span>0</span>
+        <button class="rating-up" onclick="onRatingChange(1)"> + </button>
+        <button class="rate-btn" onclick="calculateRating()">Rate!</button>
+    </div>
+    </div>
+
+
+    <section class="books-container"></section>
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/books-service.js"></script>
+    <script src="js/books-controller.js"></script>
+</body>
+
+</html>
